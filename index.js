@@ -15,7 +15,7 @@ const app = express();
 
 // 2. CORS Options (Behtar hai ise .env se connect karein)
 const corsOptions = {
-  origin: ["http://localhost:5173"],
+  origin: ["https://job-portal-frontend-seven-sable.vercel.app"],
   credentials: true,
 };
 

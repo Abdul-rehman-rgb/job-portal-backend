@@ -17,6 +17,8 @@ const app = express();
 const corsOptions = {
   origin: ["https://job-portal-frontend-seven-sable.vercel.app"],
   credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 };
 
 // 3. Middlewares (Inhe hamesha Routes se upar rakhein)

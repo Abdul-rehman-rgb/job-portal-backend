@@ -48,8 +48,10 @@ app.use('/api/jobs', jobRoutes);
 app.use('/api/applications', applicationRoutes);
 
 // 5. Port aur Server Start
-const PORT = process.env.PORT || 5005;
+// const PORT = process.env.PORT || 5005;
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Server is running on port ${PORT}`);
+// });
+
+export default app;

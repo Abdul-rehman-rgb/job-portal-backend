@@ -23,6 +23,7 @@ const corsOptions = {
 
 // 3. Middlewares (Inhe hamesha Routes se upar rakhein)
 app.use(cors(corsOptions)); // Sabse pehle CORS taaki request block na ho
+app.options('*', cors(corsOptions));
 app.use(express.json());    // Body parse karne ke liye
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
